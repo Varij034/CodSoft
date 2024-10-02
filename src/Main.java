@@ -46,7 +46,9 @@ public class Main {
             if(!GuessCorrect) {
                 System.out.println(" You are out of attempts , the number was" + GenNum);
             }
+            //Increment the rounds played
             RoundsPlayed++;
+
             System.out.println("Current Score " + TotalScore);
 
             // Asking the user if they want to play again
