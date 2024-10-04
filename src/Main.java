@@ -7,6 +7,9 @@ public class Main {
 
         //Introduction to user
         System.out.println("Welcome to Guess The Number ");
+        System.out.println();
+        System.out.println("Enter your Name:");
+        String name = sc.nextLine();
 
         // Declaring all the variables
         int MaxAttempts=8;
@@ -21,8 +24,9 @@ public class Main {
             boolean GuessCorrect = false;
 
             // Here the actual game starts
-            System.out.println("Round " + (RoundsPlayed+1)+ "has started of Guess the number Game :");
+            System.out.println("Round " + (RoundsPlayed+1)+ " has started of Guess the number Game :");
 
+            //for attempts
             for(int attempt = 1; attempt <= MaxAttempts; attempt++)
             {
                 System.out.println("Attempt " + attempt + ", Enter your Guess:");
@@ -44,7 +48,7 @@ public class Main {
                 }
             }
             if(!GuessCorrect) {
-                System.out.println(" You are out of attempts , the number was" + GenNum);
+                System.out.println(name +" You are out of attempts , the number was " + GenNum);
             }
             //Increment the rounds played
             RoundsPlayed++;
@@ -52,14 +56,14 @@ public class Main {
             System.out.println("Current Score " + TotalScore);
 
             // Asking the user if they want to play again
-            System.out.println("Do you want to play again? (y/n)");
+            System.out.println(name +" Do you want to play again? (y/n)");
             String Replay = sc.next();
 
             if(Replay.equals("n")) {
                 break;// We will exit the loop if the input is no
             }
         }
-        System.out.println("Game Over!!!");
+        System.out.println("Game Over " +name +", Your final Scores are as follows:");
         System.out.println("Rounds Played: " + RoundsPlayed);
         System.out.println("Total Score: " + TotalScore);
 

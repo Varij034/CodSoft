@@ -15,7 +15,7 @@ class Question {
         return answerIndex == correctAnswerIndex;
     }
 }
-
+// Quiz
 class Quiz {
     private Question[] questions;
     private int score;
@@ -25,8 +25,8 @@ class Quiz {
                 new Question("Which Country's Capital is Ottawa?", new String[]{"Germany", "Romania", "Canada", "Norway"}, 2),
                 new Question("Who invented the Human Evolution Theory?", new String[]{"Louis Pastuer", "Charles Darwin", "Henry Rutherford", "Marie Curie"}, 1),
                 new Question("Country with the most Olympic medals is?", new String[]{"USA", "U.K", "China", "Australia"}, 0),
-                new Question("Who is known as the Father of Mathematics", new String[]{"Archimedes","Socrates", "Carl Linnaeus", "Aristotle"},0),
-                new Question("Which country has the highest Life-Expectancy", new String[]{"Luxemburg","Japan", "Thailand", "Hong Kong"},3)
+                new Question("Who is known as the Father of Mathematics?", new String[]{"Archimedes","Socrates", "Carl Linnaeus", "Aristotle"},0),
+                new Question("Which country has the highest Life-Expectancy?", new String[]{"Luxemburg","Japan", "Thailand", "Hong Kong"},3)
     };
     score = 0;
 }
